@@ -4,7 +4,8 @@
   "description": "Submit new posts urls to Google,Bing,Baidu search engine to improve the quality and speed of website collection",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "check": "node --check index.js && node --check lib/baidu_submitter.js && node --check lib/bing_submitter.js && node --check lib/cjhreadline.js && node --check lib/generator.js && node --check lib/google_submitter.js && node --check test/smoke.test.js",
+    "test": "npm run check && node test/smoke.test.js"
   },
   "repository": {
     "type": "git",

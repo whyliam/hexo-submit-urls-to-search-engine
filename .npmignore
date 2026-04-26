@@ -1,0 +1,7 @@
+.github/
+.idea/
+cjhtest/
+coverage/
+node_modules/
+npm-debug.log*
+*.log
